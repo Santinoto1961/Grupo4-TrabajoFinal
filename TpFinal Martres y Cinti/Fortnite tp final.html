@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortnite</title>
+  <link rel="stylesheet" href="style fortnite.css">
+  <!-- Este style se encuentra para el script siguiente, se encarga de ocultar la seccion que aparece al clikear el logo -->
+  <style>
+    .seccionOculta {
+        display: none;
+        transition: max-height 0.5s ease-in-out;
+    }
+</style>
+<!-- Este script se encarga de mostrar la seccion del logo al apretarlo -->
+<script>
+  function mostrarSeccion() {
+      var seccion = document.getElementById("seccion");
+      if (seccion.style.display === "none") {
+          seccion.style.display = "block";
+      } else {
+          seccion.style.display = "none";
+      }
+  }
+</script>
+</head>
+<body>
+  <!-- Esta es la barra de navegacion -->
+  <header class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><button onclick="mostrarSeccion(); cambiarimg()"><img id="miImagen" src="logo1.png" alt="logofortnite"></button></li>
+        <li><a href="Fortnite tp final.html"><img src="logofortnite.png" alt="fortnite"></a></li>
+        <li><a href="Fortnite tp final.html">Discover</a></li>
+        <li><a href="libreria.html">My Library</a></li>
+        <li><a href="algosaliomal.html">Create</a></li>
+        <li><a href="algosaliomal.html">News</a></li>
+      </ul>
+    </div>
+    </nav>
+    <a class="btn" href="#"><button>Download</button></a>
+  </header>
+  <div class="pantallaprin">
+    <!-- Esta es la seccion del logo -->
+    <div id="seccion" class="seccionOculta">
+      <h3>Play</h3>
+      <br>
+      <ul>
+        <li> Fortnite</li>
+        <li> Rocket League</li>
+        <li> Fall Guys</li>
+      </ul>
+      <br>
+      <h3>Discover</h3>
+      <br>
+      <ul>
+        <li>Epic Games Store</li>
+        <li>Fab</li>
+        <li>SkechFab</li>
+        <li>Artstation</li>
+      </ul>
+
+    </div>
+    <!-- Estos botones se encargan de cambiar la imagen principal de la pagina -->
+    <div class="botonimg">
+      <div class="izq">
+        <button onclick="cambiarImagen('anterior')"> < </button>
+      </div>
+      <div class="der">
+        <button onclick="cambiarImagen('siguiente')"> > </button>
+      </div>
+    </div>
+    <div class="imagen">
+      <img id="presentacion" src="Foto1.png" alt="Descripción de la imagen">
+    </div>
+  </div>
+  <!-- Esta es la seccion que eatan los juegos -->
+  <h2>DE EPIC</h2>
+  <div class="juegos">
+    <img src="juego1.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Zero Built-battle royale</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego2.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>battle Royale</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego3.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Ranked Battle Royale</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego3.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Ranked Battle Royale</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego4.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Creative</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego5.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Save the Word</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego6.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Team Rumble</h2>
+    </div>
+  </div>
+  <div class="juegos">
+    <img src="juego7.png" alt="foto del juego">
+    <div class="titulo">
+      <h2>Party Royale</h2>
+    </div>
+  </div>
+  <div class="final">
+    <img src="FINALDEPAG.png" alt="final">
+</div>
+</body>
+</html>
+<!-- Este script se encarga de cambiar la imagen del logo cuando se abre la seccion oculta -->
+<script>
+  var imagenActual = 1;
+  function cambiarimg() {
+      var imagen = document.getElementById("miImagen");
+
+      if (imagenActual === 1) {
+        imagen.src = "logo1.png";
+          imagen.alt = "logofortnite";
+          imagenActual = 2;
+      } else {
+        imagen.src = "logo2.png";
+          imagen.alt = "logofortnite";
+          imagenActual = 1;
+          
+      }
+  }
+</script>
+<!-- Este es el script que se encarga de cambiar las imagenes de la pantalla principal, es mas extenso que el otro porque son mas imagenes y tiene un historial de posicion para poder ir hacia adelante y atras -->
+  <script>
+    var historialImagenes = ["Foto1.png", "Foto2.png", "Foto3.png" , "Foto4.png", "Foto5.png"];
+    var posicionActual = 0;
+    function cambiarImagen(direccion) {
+        var imagen = document.getElementById("presentacion");
+    
+        if (direccion === 'anterior') {
+            if (posicionActual > 0) {
+                posicionActual--;
+            } else {
+                posicionActual = historialImagenes.length - 1;
+            }
+        } else if (direccion === 'siguiente') {
+            if (posicionActual < historialImagenes.length - 1) {
+                posicionActual++;
+            } else {               
+                posicionActual = 0;
+            }
+        }
+        imagen.src = historialImagenes[posicionActual];
+    }
+    </script>
+    
+  

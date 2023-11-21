@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Inconsolata&family=Lobster&family=Pixelify+Sans&family=Roboto&display=swap');
+@keyframes moverimg {
+    0% {
+
+    }
+    25% {
+        
+    }
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 10px; 
+    width: 100%;
+}
+.header .nav-links{
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    margin-left: 0px;
+}
+.header .nav-links img {
+    height: 30px;
+    width: auto;
+    align-items: center;
+}
+.header .nav-links a{
+    color: lightgray;
+    text-decoration: none;
+    transition: 0.2;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    text-align: center;
+}
+.header .nav-links li{
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+    width: auto;
+    height: 40px;
+}
+.header .nav-links li button {
+    width: auto;
+    text-decoration: none;
+    background: fixed;
+    border: none;
+    outline: none;
+}
+header .nav-links li:hover{
+    background-color: rgb(102, 102, 102);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+}
+.header .img{
+    cursor: pointer;
+}
+.header .btn button{
+    align-items: end;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.pantallaprin .botonimg {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    padding-top: 25%;
+    width: 100%;
+}
+.pantallaprin .botonimg .izq{
+    float: left;
+}
+.pantallaprin .botonimg .der {
+   float: right;
+}
+.pantallaprin .botonimg button {
+    font-size: 20px;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(155, 155, 155);
+    font-size: 30;
+    border: none;
+    cursor: pointer;
+}
+.pantallaprin .botonimg button:hover {
+    background-color: rgb(209, 207, 207);
+    transition: 1ms;
+}
+.pantallaprin .imagen .img {
+    width: auto; 
+    height: auto;
+}
+.pantallaprin  {
+    width: auto;  
+}
+.pantallaprin .seccionOculta {
+    position: absolute;
+    height: 430px;
+    width: 200px;
+    background-color: rgb(37, 37, 37);
+    margin-top: 20px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    padding: 20px;
+}
+.pantallaprin .seccionOculta h3 {
+    font-size: 20px;
+}
+.pantallaprin .seccionOculta ul{
+    list-style: none;
+}
+.pantallaprin .seccionOculta img {
+    height: 20px;
+    width: 20px;
+}
+.pantallaprin .seccionOculta li {
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.juegos {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    cursor: pointer;
+}
+.juegos:hover {
+    background-color: rgb(37, 37, 37);  
+    border-radius:5px ;
+}
+.juegos img {
+    height: auto;
+    width: 250px;
+}
+.juegos .Titulo{
+    font-size: 20px;
+}
+.libreria h1 {
+    margin-top: 60px;
+    font-size: 50px ;
+    display: flex;
+    justify-content: center;
+}
+.libreria h2 {
+    font-size: 25px ;
+    display: flex;
+    justify-content: center;
+}
+
+.libreria p {
+    margin-top: 40px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.boton button {
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: yellow;
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.boton a {
+    text-decoration: none;
+    color: #000000;
+}
+.preguntas {
+    margin-top: 150px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.pregunta {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    width: 700px;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(68, 68, 68);;
+}
+.pregunta p {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.final img {
+    margin-top: 40px;
+}
+.iniciar {
+    display: flex;
+    justify-content: center;
+}
+.iniciar .cuadro{
+    padding-top: 20px;
+    margin-top: 100px;
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.iniciar .cuadro ul {
+    list-style: none;
+}
+.iniciar .cuadro li {
+    margin-top: 20px;
+}
+.iniciar .cuadro img {
+    margin-top: 20px;
+    height: 40px;
+    width: auto;
+}
+.iniciar .cuadro button {
+    width: 235px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.651);
+    text-decoration: none;
+}
+.iniciar .cuadro button:hover {
+    background-color: rgb(0, 0, 255);
+    text-decoration: none;
+}
+.iniciar .cuadro .otraformas {
+    margin-top: 0%;
+    display: inline-block;
+}
+.iniciar .cuadro .otraformas img{
+    margin-top: 0%;
+    height: 45px;
+    width: 45px;
+}
+.iniciar .cuadro .opciones {
+    height: 40px;
+    width: auto;
+    border: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortnite</title>
+  <link rel="stylesheet" href="style fortnite.css">
+    <style>      
+        .seccionOculta {
+            display: none;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+    
+<script>
+  function mostrarSeccion() {
+      var seccion = document.getElementById("seccion");
+      if (seccion.style.display === "none") {
+          seccion.style.display = "block";
+      } else {
+          seccion.style.display = "none";
+      }
+  }
+</script>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><button onclick="mostrarSeccion(); cambiarimg()"><img id="miImagen" src="logo1.png" alt="logofortnite"></button></li>
+        <li><a href="Fortnite tp final.html"><img src="logofortnite.png" alt="fortnite"></a></li>
+        <li><a href="Fortnite tp final.html">Discover</a></li>
+        <li><a href="libreria.html">My Library</a></li>
+        <li><a href="algosaliomal.html">Create</a></li>
+        <li><a href="algosaliomal.html">News</a></li>
+      </ul>
+    </div>
+    </nav>
+    <a class="btn" href="#"><button>Download</button></a>
+  </header>
+<body>
+
+    <div class="libreria">
+        <h1>oh no..</h1>
+        <h2>something went wrong</h2>
+        <br>
+        <p><B>Try again later, if your problem is not solved, contact technical service EpicGamesupport@gmail.com</B></p>
+      </div>
+
+  <div class="final">
+    <img src="FINALDEPAG.png" alt="final">
+</div>
+</body>
+</html>
+<script>
+var imagenActual = 1;
+function cambiarimg() { 
+  var imagen = document.getElementById("miImagen");
+
+  if (imagenActual === 1) {
+    imagen.src = "logo1.png";
+      imagen.alt = "logofortnite";
+      imagenActual = 2;
+  } else {
+    imagen.src = "logo2.png";
+      imagen.alt = "logofortnite";
+      imagenActual = 1;
+      
+  }
+}
+</script>

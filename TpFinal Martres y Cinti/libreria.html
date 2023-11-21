@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortnite</title>
+  <link rel="stylesheet" href="style fortnite.css">
+    <style>
+        .seccionOculta {
+            display: none;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+<script>
+  function mostrarSeccion() {
+      var seccion = document.getElementById("seccion");
+      if (seccion.style.display === "none") {
+          seccion.style.display = "block";
+      } else {
+          seccion.style.display = "none";
+      }
+  }
+</script>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><button onclick="mostrarSeccion(); cambiarimg()"><img id="miImagen" src="logo1.png" alt="logofortnite"></button></li>
+        <li><a href="Fortnite tp final.html"><img src="logofortnite.png" alt="fortnite"></a></li>
+        <li><a href="Fortnite tp final.html">Discover</a></li>
+        <li><a href="libreria.html">My Library</a></li>
+        <li><a href="algosaliomal.html">Create</a></li>
+        <li><a href="algosaliomal.html">News</a></li>
+      </ul>
+    </div>
+    </nav>
+    <a class="btn" href="#"><button>Download</button></a>
+  </header>
+  <div class="libreria">
+    <h1>MY LIBRARY</h1>
+    <br>
+    <p><B>Sign in to see your library of games, including your favorites, recently played, and if youre a creator, you can see all your islands as well!</B></p>
+  </div>
+  <div class="boton">
+    <button><b><a href="singin.html">SING IN</a></b></button>
+  </div>
+    <div class="preguntas">
+        <h1>FORTNITE MY LIBRARY FAQ</h1>
+        <div class="pregunta">
+            <h1>WHAT IS FORTNITES "MY LIBRARY"?</h1>
+            <P>Fortnites “My Library” is where you can quickly see your favorite and recently played islands. If you’re looking at the in-game version of My Library, you can select one of your favorite or recently played islands and start playing!</P>
+        </div>
+    </div>
+    <div class="pregunta">
+        <h1>CAN I SAVE MY FAVORITE FORTNITE ISLANDS TO MY LIBRARY?</h1>
+        <p>Yes, the islands you favorite will appear in your library. Click the “heart” icon for an island (either on the islands webpage or in-game) to favorite it.</p>
+    </div>
+    <div class="pregunta">
+        <h1>DO I NEED TO BE LOGGED INTO FORTNITES.COM TO SEE MY LIBRARY ON WEB?</h1>
+        <p>To access the web version of My Library, you need to be logged into Fortnite.com. Log into Fortnite.com with the same Epic account you use to play Fortnite.</p>
+    </div>
+    <div class="pregunta">
+        <h1>IS THERE A DIFFERENCE BETWEEN THW WEB AND IN-GAME VERSIONS OF FORTNITES MY LIBRARY?</h1>
+        <p>The web version of My Library displays the islands you’ve added to your playlist. In-game, your playlist appears in “Discover” instead. (In the “My Playlist” row.)</p>
+    </div>
+    <div class="final">
+        <img src="FINALDEPAG.png" alt="final">
+    </div>
+</body>
+</html>
+<script>
+  var imagenActual = 1;
+  function cambiarimg() { 
+      var imagen = document.getElementById("miImagen");
+
+      if (imagenActual === 1) {
+        imagen.src = "logo1.png";
+          imagen.alt = "logofortnite";
+          imagenActual = 2;
+      } else {
+        imagen.src = "logo2.png";
+          imagen.alt = "logofortnite";
+          imagenActual = 1;
+          
+      }
+  }
+</script>
+    
+  
